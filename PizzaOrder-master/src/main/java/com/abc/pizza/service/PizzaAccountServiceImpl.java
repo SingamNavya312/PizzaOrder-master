@@ -32,6 +32,44 @@ public class PizzaAccountServiceImpl implements PizzaAccountService{
 	@Override
 	public List<PizzaAccount> getAllPizza() {
 		// TODO Auto-generated method stub
+		return hotelAccountRepository.findAll();
+	}
+
+	@Override
+	public boolean insertPizzaAccount(PizzaAccount a) {
+		// TODO Auto-generated method stub
+		PizzaAccount obj = hotelAccountRepository.save(a);
+		return obj!=null?true:false;
+	}
+
+	@Override
+	public PizzaAccount getPizzaAccount(int pId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object updatePizzaAccount(Long pizzaId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	/*@Override
+	public String login(String username, String password) throws InvalidUserException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean logout(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<PizzaAccount> getAllPizza() {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -45,7 +83,7 @@ public class PizzaAccountServiceImpl implements PizzaAccountService{
 	public PizzaAccount getPizzaAccount(int pId) {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}*/
 }
 	
 	

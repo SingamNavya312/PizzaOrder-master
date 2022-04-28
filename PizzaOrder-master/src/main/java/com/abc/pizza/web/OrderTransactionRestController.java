@@ -23,7 +23,7 @@ public class OrderTransactionRestController {
 		System.out.println("-----Inside Booking Constructor");
 	}
 	
-	@GetMapping("/allbookings")
+	@GetMapping("/allorders")
 	public List<OrderTransactions> getallOrderTransactions()
 	{
 		return orderservice.getallBookingTransactions();

@@ -9,7 +9,7 @@ import com.abc.pizza.entity.PizzaAccount;
 
 import com.abc.pizza.exceptions.InvalidUserException;
 
-@Service
+//@Service
 
 public interface PizzaAccountService 
 {
